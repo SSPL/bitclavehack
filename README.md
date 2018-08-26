@@ -1,2 +1,2 @@
 # bitclavehack
-BitClave hackathon on Aug 25 and Aug 26
+BitClave hackathon on Aug 25 and Aug 26, 2018
