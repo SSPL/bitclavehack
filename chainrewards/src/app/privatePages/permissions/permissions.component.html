@@ -1,0 +1,52 @@
+<div class="secret-admin-container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Amazon has access to the following information about you and your search.</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="verticalContainer">
+
+                <mat-slide-toggle
+                    [checked]="displayOptions.amazonage"
+                    (change)="displayOptions.amazonage = $event.source.checked">
+                    Share your age
+                    </mat-slide-toggle>
+
+                <mat-slide-toggle
+                    [checked]="displayOptions.amazonsearch"
+                    (change)="displayOptions.amazonsearch = $event.source.checked">
+                    Share your Amazon Search data
+                </mat-slide-toggle>
+
+            </div>
+            <mat-card-actions align="end">
+              <button color="primary" (click)="saveDisplayOptions()" mat-button>Save Options</button>
+            </mat-card-actions>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card>
+            <mat-card-header>
+                <mat-card-title>Netflix has access to the following information about you and your search</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="verticalContainer">
+                        <mat-slide-toggle
+                        [checked]="displayOptions.netflixage"
+                        (change)="displayOptions.n = $event.source.checked">
+                        Share your age
+                        </mat-slide-toggle>
+    
+    
+                </div>
+                <mat-card-actions align="end">
+                  <button color="primary" (click)="saveDisplayOptions()" mat-button>Save Options</button>
+                </mat-card-actions>
+            </mat-card-content>
+        </mat-card>
+
+
+</div>
+
+
+

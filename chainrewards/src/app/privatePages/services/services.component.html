@@ -1,0 +1,29 @@
+<div class="secret-admin-container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Services that has access to your data</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="verticalContainer">
+                <mat-slide-toggle
+                  [checked]="displayOptions.amazon"
+                  (change)="displayOptions.amazon = $event.source.checked">
+                  Amazon
+                </mat-slide-toggle>
+
+               
+                <mat-slide-toggle
+                  [checked]="displayOptions.netflix"
+                  (change)="displayOptions.netflix = $event.source.checked">
+                  Netlifx
+                </mat-slide-toggle>
+            </div>
+            <mat-card-actions align="end">
+              <button color="primary" (click)="saveDisplayOptions()" mat-button>Save Options</button>
+            </mat-card-actions>
+        </mat-card-content>
+    </mat-card>
+</div>
+
+
+
